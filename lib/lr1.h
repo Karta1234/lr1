@@ -1,4 +1,4 @@
 #pragma once
 #include <vector>
 
-int findPair(const std::vector<int>& array);
+std::pair<std::vector<int>, int> findPair(const std::vector<int>& array);

@@ -1,6 +1,9 @@
 #include "lr1.h"
+#include <iostream>
 using namespace std;
-int findPair(const std::vector<int>& array) {
+
+std::pair<vector<int>, int> findPair(const std::vector<int>& array) {
+    vector<int> errors;
     int count = 0;
     int i = 0;
     while (i < array.size()-1) {
@@ -10,5 +13,6 @@ int findPair(const std::vector<int>& array) {
         }
         i++;
     }
-    return count;
+    return make_pair(errors, count);
 }
+
